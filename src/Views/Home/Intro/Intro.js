@@ -16,7 +16,7 @@ const Intro = () => {
                     <div className='home-design-content'>UI Designer 📐</div>
                 </div>
                 <div className='home-age'>
-                    <div className='home-age-content'>Age 18 👀</div>
+                    <div className='home-age-content'>18 years old 👀</div>
                 </div>
                 <div className='home-title'>
                     <h1>Front-End Developer</h1>

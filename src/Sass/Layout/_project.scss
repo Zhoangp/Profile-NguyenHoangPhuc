@@ -1,5 +1,4 @@
 .project {
-    padding-bottom: 5rem;
 
     .draw {
         opacity: 0.8;
@@ -40,10 +39,11 @@
         .project-content-cover {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
+            grid-gap: 30px;
 
             .project-item {
                 img {
+                    
                     box-shadow: 1px 1px 1px -0.5px white;
                     border-radius: 30px;
                     width: 100%;

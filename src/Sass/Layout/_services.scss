@@ -9,6 +9,7 @@
     }
 
     p {
+        font-weight: 600;
         margin-top: 1rem;
         font-size: 60px;
     }
@@ -196,11 +197,11 @@
     }
     .title {
         h2 {
-            font-size: 1.75rem;
+            font-size: 1.75rem !important;
         }
 
         p {
-            font-size: 45px;
+            font-size: 45px !important;
         }
     }
     .services {
@@ -269,9 +270,6 @@
     }
     .services {
 
-
-        
-
         .services-title {
             h3 {
                 font-size: 30px;
@@ -338,10 +336,10 @@
     .title {
                         
         h2 {
-            font-size: 20px;
+            font-size: 20px !important;
         }
         p {
-            font-size: 25px;
+            font-size: 25px !important;
         }
     }
     .services {
