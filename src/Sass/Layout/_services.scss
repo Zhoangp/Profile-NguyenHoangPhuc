@@ -1,9 +1,25 @@
 @import './home';
 
-.services {
-    background-color: #02001e;
-    padding: 5rem 150px;
+.title {
+    h2 {
+        font-size: 2rem;
+        color: #c779d0;
+        opacity: 0.8;
+    }
 
+    p {
+        font-size: 60px;
+    }
+}
+.draw {
+    margin-bottom: 2rem;
+}
+.cover {
+    padding: 0rem 150px 2rem 150px;
+
+}
+.services {
+    padding-top: 5rem !important;
     .services-title {
         text-align: center;
 
@@ -14,8 +30,7 @@
         }
 
         .services-title-bottom {
-            margin-bottom: 3rem;
-
+            margin-bottom: 2rem;
             h3 {
                 background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
                 background-size: 400% 400%;
@@ -57,18 +72,7 @@
 
             .services-content-left {
                 width: 60%;
-                .services-left-title {
-                    h2 {
-                        font-size: 2rem;
-                        color: #c779d0;
-                        opacity: 0.8;
-                        margin: 1rem 0;
-                    }
-
-                    p {
-                        font-size: 60px;
-                    }
-                }
+                
 
                 .services-left-avt {
                     margin-top: 3rem;
@@ -184,8 +188,21 @@
 }
 
 @media (max-width: 1200px) {
+    .cover {
+        padding: 0rem 100px 2rem 100px;
+
+    }
+    .title {
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        p {
+            font-size: 45px;
+        }
+    }
     .services {
-        padding: 5rem 100px;
+
 
         .services-title {
             h3 {
@@ -198,15 +215,7 @@
 
                 .services-content-left {
 
-                    .services-left-title {
-                        h2 {
-                            font-size: 1.75rem;
-                        }
-
-                        p {
-                            font-size: 45px;
-                        }
-                    }
+                    
                     .services-left-avt {
                         .services-avt-img {
                             i {
@@ -252,8 +261,14 @@
     }
 }
 @media (max-width: 770px) {
+    .cover {
+    padding: 0rem 50px 2rem 50px;
+
+    }
     .services {
-        padding: 5rem 70px;
+
+
+        
 
         .services-title {
             h3 {
@@ -306,6 +321,8 @@
                         span {
                             font-size: 15px;
                         }p {
+                            margin-top: 0.5rem;
+                            line-height: 20px;
                             font-size: 12px;
                         }
                     }
@@ -316,6 +333,15 @@
     }
 }
 @media (max-width: 500px) {
+    .title {
+                        
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 25px;
+        }
+    }
     .services {
 
 
@@ -325,15 +351,7 @@
                 .services-content-left {
                     position: relative;
                     display: flex;
-                    .services-left-title {
-                        
-                        h2 {
-                            font-size: 20px;
-                        }
-                        p {
-                            font-size: 25px;
-                        }
-                    }
+                    
                     .services-left-avt {
                         .services-avt-img {
                            width: 150px;
@@ -349,8 +367,6 @@
 }
 @media (max-width: 340px) {
     .services {
-
-
         .services-content {
             .services-content-cover {
                 .services-content-left {

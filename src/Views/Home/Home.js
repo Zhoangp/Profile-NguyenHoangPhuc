@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Fragment } from 'react/cjs/react.production.min';
 import Intro from './Intro/Intro';
+import Project from './Project/Project';
 import Services from './Services/Services';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <Fragment>
             <Intro/>
             <Services/>
+            <Project/>
         </Fragment>
     );
 };

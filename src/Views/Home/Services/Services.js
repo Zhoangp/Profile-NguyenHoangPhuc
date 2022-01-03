@@ -2,7 +2,7 @@ import React from 'react'
 import avt from '../../../images/IMG_3450.PNG'
 const Services = () => {
     return (
-        <div className='services'>
+        <div className='services cover'>
             <div className='services-title'>
                 <div className='services-title-top'>
                 <h3>Is not just what it looks like and feels like.</h3>
@@ -11,7 +11,7 @@ const Services = () => {
                 <h3>Is how it works.</h3>
                 <p>- Steve Jobs -</p>
                 </div>
-            </div>
+           </div>
             <div className='draw'>
                 <div className='line'></div>
                 <div className='line'></div>
@@ -19,12 +19,12 @@ const Services = () => {
             <div className='services-content'>
                 <div className='services-content-cover'>
                 <div className='services-content-left'>
-                    <div className='services-left-title'>
+                    <div className='title'>
                         <h2>My services</h2>
                         <p>The most creative intuitive workmate.</p>
                     </div>
                     <div className='services-left-avt'>
-                    
+                 
                        <div className='services-avt-img'>
                        <i class="fas fa-code"></i>
                     <i class="fab fa-github"></i>

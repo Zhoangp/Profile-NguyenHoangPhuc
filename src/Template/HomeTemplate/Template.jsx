@@ -6,10 +6,12 @@ import 'react-use-smooth-scroll/dist/index.css'
 export const Template = (props) => {
     const {Component} = props
     return <Fragment>
-            <Header/>
             <UseEffectScroll>
+
+            <Header/>
                 <Component/>
                 </UseEffectScroll>
+
         </Fragment>
         
 }
