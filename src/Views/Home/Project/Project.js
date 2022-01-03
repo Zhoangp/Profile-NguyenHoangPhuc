@@ -28,6 +28,10 @@ const Project = () => {
                     </div>
                 </div>
             </div>
+            <div className='project-curious'>
+                <p>Curious about the process?</p>
+                <a href='https://github.com/Zhoangp' target="_blank"><p>Visit my Github</p></a>
+            </div>
         </div>
     );
 };
