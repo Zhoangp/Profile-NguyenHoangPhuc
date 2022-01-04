@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Intro = () => {
     return (
-        <div className='home'>
+        <div className='home' id="intro">
             <div className='home-background'>
                 <div className='home-avt'>
                     <div className='avt-img'></div>

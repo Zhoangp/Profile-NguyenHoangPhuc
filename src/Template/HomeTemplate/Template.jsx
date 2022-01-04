@@ -8,10 +8,11 @@ export const Template = (props) => {
   const { Component } = props;
   return (
     <Fragment>
-      <UseEffectScroll>
+      
         <Header />
+      {/*   <UseEffectScroll> */}
         <Component />
-      </UseEffectScroll>
+        {/* </UseEffectScroll> */}
       <Footer />
     </Fragment>
   );

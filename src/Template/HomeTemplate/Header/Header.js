@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import {AiOutlineMenu} from 'react-icons/ai'
+import { Link } from 'react-scroll';
 
 const Header = () => {
     const [heightList, setHeightList] = useState(false)
@@ -8,7 +9,7 @@ const Header = () => {
         <div className='header'>
             <div className='header-cover'>
             <div className='header-left'>
-                <NavLink to="/">Nguyen Hoang Phuc</NavLink>
+                <Link to="intro" activeClass="active" smooth={true} spy={true}>Nguyen Hoang Phuc</Link>
             </div>
             <button className='btn-menu' onClick={() => {
                 setHeightList(!heightList)
@@ -17,24 +18,24 @@ const Header = () => {
             <div className={`header-list  ${heightList ? "height-true" : "height-false"}`}>
                 <ul>
                     <li>
-                        <NavLink to="#">
+                        <Link to="services" smooth={true} spy={true}>
                             Services
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>
-                        <NavLink to="#">
+                        <Link to="projects" smooth={true} spy={true}>
                             Projects
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>
-                        <NavLink to="#">
+                        <Link to="about" smooth={true} spy={true}>
                             About me
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>
-                        <NavLink to="#">
+                        <Link to="contact" smooth={true} spy={true}>
                             Contact
-                        </NavLink>
+                        </Link>
                     </li>
                 </ul>
             </div>

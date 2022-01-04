@@ -4,7 +4,7 @@ import bike from '../../../images/bike.png'
 import movie from '../../../images/movie.png'
 const Project = () => {
     return (
-        <div className='project cover'>
+        <div className='project cover' id="projects">
             <div className='draw'>
             <div className='line'></div>
             <div className='line'></div>

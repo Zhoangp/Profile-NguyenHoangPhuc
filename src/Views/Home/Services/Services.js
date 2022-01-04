@@ -2,7 +2,7 @@ import React from 'react'
 import avt from '../../../images/IMG_3450.PNG'
 const Services = () => {
     return (
-        <div className='services cover'>
+        <div className='services cover' id="services">
             <div className='services-title'>
                 <div className='services-title-top'>
                 <h3>Is not just what it looks like and feels like.</h3>

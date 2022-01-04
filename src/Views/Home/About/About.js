@@ -3,7 +3,7 @@ import sticker from '../../../images/IMG_3452.PNG'
 
 const About = () => {
     return (
-        <div className='about cover'>
+        <div className='about cover' id="about">
             <div className='draw'>
                 <div className='line'></div>
             </div>
