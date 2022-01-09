@@ -10,13 +10,16 @@ export const Template = (props) => {
   const { Component } = props;
   const listRefs = useRef([])
   const [arr, setArr] = useState([])
-
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
   useEffect(() => {
     if(listRefs.current) {
     listRefs.current.map((item) => {
       setArr(arr => [...arr,item.getBoundingClientRect().top])
     }, listRefs)
   }
+  console.log(arr)
   }, [listRefs])
   return (
     <Fragment>
@@ -27,6 +30,7 @@ export const Template = (props) => {
         </Parallax> */}
           <Header ref={listRefs} listPos={arr}/>
         <Component ref={listRefs}  />
+        {console.log(arr)}
       <Footer />
       {/* </ParallaxProvider> */}
     </Fragment>
