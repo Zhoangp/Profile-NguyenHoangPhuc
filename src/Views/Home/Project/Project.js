@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { forwardRef } from 'react/cjs/react.production.min';
 import bike from '../../../images/bike.png'
 import movie from '../../../images/movie.png'
-const Project = () => {
+const Project = (props, ref) => {
     return (
-        <div className='project cover' id="projects">
+        <div ref={ref} className='project cover' id="projects">
             <div className='draw'>
             <div className='line'></div>
             <div className='line'></div>
@@ -36,4 +37,4 @@ const Project = () => {
     );
 };
 
-export default Project;
+export default forwardRef(Project);

@@ -1,6 +1,7 @@
 import React from 'react';
+import { forwardRef } from 'react/cjs/react.production.min';
 
-const Work = () => {
+const Work = (props) => {
     return (
         <div className='cover'>
             Work
@@ -8,4 +9,4 @@ const Work = () => {
     );
 };
 
-export default Work;
+export default forwardRef(Work);

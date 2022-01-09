@@ -1,9 +1,13 @@
 import React from 'react';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { useRef } from 'react';
 import sticker from '../../../images/IMG_3452.PNG'
+import { forwardRef, Fragment } from 'react/cjs/react.production.min';
 
-const About = () => {
+const About = (props, ref) => {
     return (
-        <div className='about cover' id="about">
+        <Fragment>
+        <div ref={ref} className='about cover' id="about">
             <div className='draw'>
                 <div className='line'></div>
             </div>
@@ -11,6 +15,7 @@ const About = () => {
                 <h2>About me</h2>
                 <p>Welcome to Phuc's World</p>
             </div>
+
             <div className='about-content'>
                 <div className='about-content-cover'>
                 <div className='about-content-card'>
@@ -42,7 +47,8 @@ const About = () => {
             </div>
             
         </div>
+        </Fragment>
     );
 };
 
-export default About;
+export default forwardRef(About);

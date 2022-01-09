@@ -1,9 +1,12 @@
 import React from 'react';
+import { forwardRef } from 'react';
+import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Intro = () => {
+const Intro = (props, ref)=> {
+
     return (
-        <div className='home' id="intro">
+        <div className='home' id="intro" ref={ref}>
             <div className='home-background'>
                 <div className='home-avt'>
                     <div className='avt-img'></div>
@@ -31,4 +34,4 @@ const Intro = () => {
     );
 };
 
-export default Intro;
+export default forwardRef(Intro);

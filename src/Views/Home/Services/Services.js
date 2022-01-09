@@ -1,8 +1,10 @@
 import React from 'react'
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
+import { forwardRef } from 'react/cjs/react.production.min'
 import avt from '../../../images/IMG_3450.PNG'
-const Services = () => {
+const Services = (props, ref) => {
     return (
-        <div className='services cover' id="services">
+        <div ref={ref} className='services cover' id="services">
             <div className='services-title'>
                 <div className='services-title-top'>
                 <h3>Is not just what it looks like and feels like.</h3>
@@ -19,17 +21,20 @@ const Services = () => {
             <div className='services-content'>
                 <div className='services-content-cover'>
                 <div className='services-content-left'>
+
                     <div className='title'>
                         <h2>My services</h2>
                         <p>The most creative intuitive workmate.</p>
                     </div>
                     <div className='services-left-avt'>
-                 
                        <div className='services-avt-img'>
-                       <i class="fas fa-code"></i>
+    
+                        
+                    <i class="fas fa-code"></i>
                     <i class="fab fa-github"></i>
                     <i class="fab fa-js-square"></i>
                     <i class="fab fa-bootstrap"></i>
+                  
                     </div>
                     </div>
                 </div>
@@ -53,4 +58,4 @@ const Services = () => {
         </div>
     )
 }
-export default Services
+export default forwardRef(Services)

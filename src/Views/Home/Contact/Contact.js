@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { forwardRef } from 'react/cjs/react.production.min';
 
-const Contact = () => {
+const Contact = (props, ref) => {
     return (
-        <div className='contact cover' id="contact">
+        <div ref={ref} className='contact cover' id="contact">
             <div className='draw'>
                 <div className='line'></div>
             </div>
@@ -15,4 +16,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default forwardRef(Contact);
