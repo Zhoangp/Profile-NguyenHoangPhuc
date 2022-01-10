@@ -7,6 +7,7 @@ import Intro from './Intro/Intro';
 import Project from './Project/Project';
 import Services from './Services/Services';
 import { forwardRef } from 'react/cjs/react.production.min';
+import Footer from '../../Template/HomeTemplate/Footer/Footer';
 
 const Home = (props, listRefs) => {
     const arr = [
@@ -25,6 +26,8 @@ const Home = (props, listRefs) => {
             }) :    arr.map((Item, index) => {
                 return <Item key={index}/>
             })}
+      <Footer />
+
         </Fragment>
     );
 };

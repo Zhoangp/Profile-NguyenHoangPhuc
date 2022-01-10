@@ -12,7 +12,7 @@ import { forwardRef } from 'react';
 const Header = (props, refs) => {
     const navigate = useNavigate()
     const location = useLocation()
-    
+ 
     const  handleClick = async (index) => {
         if(!refs.current) return
         if(location.pathname !== '/') {

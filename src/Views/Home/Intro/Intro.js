@@ -26,7 +26,7 @@ const Intro = (props, ref)=> {
                     <h2>In Ho Chi Minh, VietNam</h2>
                 </div>
                 <div className='home-contact'>
-                <NavLink to="/contact">Let's work<i className="fas fa-chevron-right"></i></NavLink>
+                <NavLink to="/work">Let's work<i className="fas fa-chevron-right"></i></NavLink>
 
                 </div>
             </div>

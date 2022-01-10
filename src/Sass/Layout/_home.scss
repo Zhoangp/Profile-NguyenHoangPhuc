@@ -2,6 +2,11 @@
 .active {
     opacity: 1 !important;
 }
+.bg {
+    background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8) fixed;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
 .home {
     .home-background {
         position: relative;

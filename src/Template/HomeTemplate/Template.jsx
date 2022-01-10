@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation, useNavigate, useParams } from "react-router-dom";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { Fragment, useEffect, useState } from "react";
 import Header from "./Header/Header";
@@ -7,6 +7,7 @@ import "react-use-smooth-scroll/dist/index.css";
 import Footer from "./Footer/Footer";
 import { useRef } from "react";
 export const Template = (props) => {
+  const {pathname} = useLocation()
   const { Component } = props;
   const listRefs = useRef([])
   const [arr, setArr] = useState([])
@@ -19,20 +20,28 @@ export const Template = (props) => {
       setArr(arr => [...arr,item.getBoundingClientRect().top])
     }, listRefs)
   }
-  console.log(arr)
   }, [listRefs])
+  useEffect(() => {
+    if(pathname === '/work') {
+      document.body.classList.add('bg')
+      console.log(pathname)
+    }
+    else {
+      document.body.classList.remove('bg')
+    }
+
+  }, [pathname])
   return (
     <Fragment>
       
-          {/*   <UseEffectScroll> */}
+            {/* <UseEffectScroll> */}
          {/*  <ParallaxProvider>
         <Parallax y={[50, -50]}>
         </Parallax> */}
           <Header ref={listRefs} listPos={arr}/>
         <Component ref={listRefs}  />
-        {console.log(arr)}
-      <Footer />
       {/* </ParallaxProvider> */}
+      {/* </UseEffectScroll> */}
     </Fragment>
   );
 };
