@@ -10,6 +10,7 @@ export const Template = (props) => {
   const {pathname} = useLocation()
   const { Component } = props;
   const listRefs = useRef([])
+  const height = useRef(null)
   const [arr, setArr] = useState([])
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
@@ -31,8 +32,10 @@ export const Template = (props) => {
     }
 
   }, [pathname])
+
+
   return (
-    <Fragment>
+    <div ref={height}>
       
             {/* <UseEffectScroll> */}
          {/*  <ParallaxProvider>
@@ -42,6 +45,6 @@ export const Template = (props) => {
         <Component ref={listRefs}  />
       {/* </ParallaxProvider> */}
       {/* </UseEffectScroll> */}
-    </Fragment>
+    </div>
   );
 };
